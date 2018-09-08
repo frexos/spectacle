@@ -1,0 +1,13 @@
+class HelloMessage
+    extends React.Component {
+  state = {
+    count:0
+  };
+  render() {
+    return
+        <div onClick={(e) =>
+              this.setState({
+                  count: this.state.count+1
+              })}>Hello {this.props.name}
+        </div>;
+  }}
